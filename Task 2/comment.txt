@@ -1,0 +1,5 @@
+Elements are not correctly printed out because by convention index values start at 0, while in the range function call we explicitly state we want to start at 1 by providing the first argument.
+We could rewrite this to say:
+for i in range(len(a_list)):
+This way, we iterate the right number of times, but when we print the output we need to not forget to add 1 to every index value, in order to get the human-preferred numbers.
+Another option would be to use the build-in function enumerate, as is done in print_list_v2.py
